@@ -278,6 +278,11 @@ body.active{ overflow: hidden;}
   color: var(--medium-sea-green);
 }
 
+.section-text {
+  font-size: var(--fs-7);
+  margin-block: 15px 25px;
+}
+
 
 
 /*-----------------------------------*\
@@ -668,9 +673,42 @@ body.active{ overflow: hidden;}
 /*-----------------------------------*\
   #INSTRUCTION
 \*-----------------------------------*/
+.instruction :is(.section-title, .section-text) {text-align: center;}
 
+.instruction .section-title {
+  margin-block-end: 15px;
+}
 
+.instruction-list {
+  display: grid;
+  gap: 30px;
+}
 
+.instruction-card {
+  text-align: center;
+}
+
+.instruction-card .card-banner { transition: var(--transition-2);}
+
+.instruction-card:hover .card-banner {
+  transform: rotateY(1turn);
+}
+
+.instruction-card .img {
+  margin-inline: auto;
+  margin-block-end: 12px;
+}
+
+.instruction-card .card-subtitle {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+}
+
+.instruction-card .card-title {
+  font-size: var(--fs-4);
+  margin-block: 5px 15px;
+}
 
 
 /*-----------------------------------*\
